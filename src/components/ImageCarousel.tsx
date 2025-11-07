@@ -5,7 +5,7 @@ export default function ImageCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalImages = 5;
   const images = Array.from({ length: totalImages }, (_, i) =>
-    `/src/public/${String(i + 1).padStart(2, '0')}.png`
+    `/Carrossel ${i + 1}.jpeg`
   );
 
   useEffect(() => {
